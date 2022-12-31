@@ -1,0 +1,9 @@
+project: chardet
+
+target: fuzz_chardet
+
+image: ghcr.io/ethanm27/chardet:latest
+
+cmds:
+    - cmd: /src/mayhem/fuzz_chardet.py
+      libfuzzer: true
